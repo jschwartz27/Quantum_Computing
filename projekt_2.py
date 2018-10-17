@@ -13,12 +13,14 @@ n = np.arange(0, number, 1)
 
 def label(equation):
    label = 'O' + str(equation)
+   
    return label
 
 
 def ratio(objekt):
    eqs = list(objekt.values())[0]
    ratio = eqs[0]/eqs[1]
+   
    return ratio
 
 # list is [Classical, Quantum]
