@@ -22,7 +22,8 @@ def ratio(objekt):
    return ratio
 
 # list is [Classical, Quantum]
-algorithms = [{"Shor's Algorithm": [(np.exp(np.log(n) ** (1/3) * (np.log(np.log(n))) ** (2/3)) ** (1/3)), (np.log(n) ** 3)]},
+algorithms = [
+              {"Shor's Algorithm": [(np.exp(np.log(n) ** (1/3) * (np.log(np.log(n))) ** (2/3)) ** (1/3)), (np.log(n) ** 3)]},
               {"Testing Group Commutivity": [(n), (n**(2/3) * np.log(n))]},
               {"Element Distinctions": [(n), (n**(2/3))]},
               {"Matrix Product Verification": [(n**2), (n**(5/3))]},
