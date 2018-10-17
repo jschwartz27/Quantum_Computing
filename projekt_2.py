@@ -11,9 +11,11 @@ z_lim = 40
 number = 50000
 n = np.arange(0, number, 1)
 
+
 def label(equation):
    label = 'O' + str(equation)
    return label
+
 
 def ratio(objekt):
    eqs = list(objekt.values())[0]
@@ -30,10 +32,6 @@ algorithms = [{"Shor's Algorithm": [(np.exp(np.log(n) ** (1/3) * (np.log(np.log(
               {"Quantum Fourier Transformation": [(np.log(n) * n), (np.log(n))]}  
               ]
 algorithms.reverse()
-# Plot complexities
-
-# t = np.arange(0.0, 6.0, 1)
-# plt.yticks(range(0, len(t) + 1))
 
 counter = 1
 for algorithm in algorithms:
@@ -44,7 +42,6 @@ for algorithm in algorithms:
    counter += 1
 
 ax.set_yticks(np.arange(1, len(algorithms) + 1)) 
-#ax.set_yticklabels([list(i.keys())[0] for i in algorithms])
 ax.set_zlim([0, z_lim])
 ax.set_xlim([0, number])
 ax.set_xlabel('n (number of inputs)')
