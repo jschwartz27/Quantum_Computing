@@ -4,12 +4,11 @@ import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
-fig = plt.figure(figsize=(14,14))
-ax = fig.add_subplot(111, projection='3d')
-
 z_lim = 40
 number = 50000
 n = np.arange(0, number, 1)
+fig = plt.figure(figsize=(14,14))
+ax = fig.add_subplot(111, projection='3d')
 
 
 def label(equation):
