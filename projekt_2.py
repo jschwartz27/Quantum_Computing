@@ -1,4 +1,5 @@
 import numpy as np
+#%matplotlib inline
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
