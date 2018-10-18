@@ -39,10 +39,12 @@ algorithms.reverse()
 
 counter = 1
 for algorithm in algorithms:
-   ax.scatter(xs=n,
+   ax.scatter(
+              xs=n,
               ys=counter,
               zs=ratio(algorithm),
-              label=list(algorithm.keys())[0])
+              label=list(algorithm.keys())[0]
+              )
    counter += 1
 
 ax.set_yticks(np.arange(1, len(algorithms) + 1)) 
