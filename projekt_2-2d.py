@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
-number = 1000000000
+number = 1**9
 n = np.arange(0, number, 1000)
 fig = plt.figure(figsize=(14,14))
 ax = fig.add_subplot(111)
