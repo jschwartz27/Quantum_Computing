@@ -26,7 +26,6 @@ def ratio(objekt):
 # List containing a dictionary for each algorithm
 # The 0th index for the value list of each dictionary is the classical equation
 # The 1st index is the quantum equation i.e. [Classical, Quantum]
-
 algorithms = [
               {"Shor's Algorithm": [(np.exp(np.log(n) ** (1/3) * (np.log(np.log(n))) ** (2/3)) ** (1/3)), (np.log(n) ** 3)]},
               {"Testing Group Commutivity": [(n), (n**(2/3) * np.log(n))]},
