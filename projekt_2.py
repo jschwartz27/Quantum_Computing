@@ -16,7 +16,7 @@ def label(equation):
    
    return label
 
-
+# Function determining ratio of complexity of Classical/Quantum algorithms
 def ratio(objekt):
    eqs = list(objekt.values())[0]
    ratio = eqs[0]/eqs[1]
