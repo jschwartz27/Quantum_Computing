@@ -1,5 +1,4 @@
 from mpl_toolkits import mplot3d
-#%matplotlib inline
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
